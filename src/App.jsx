@@ -141,6 +141,9 @@ const skillsData = [
 
 export default function SkillsRoadmap() {
   const [skills, setSkills] = useState(() => {
+    const saved = localStorage.getItem('roadmap-skills');
+    if (saved) return JSON.parse(saved);
+    
     const flat = {};
     skillsData.forEach(phase =>
       phase.categories.forEach(cat =>
@@ -149,9 +152,12 @@ export default function SkillsRoadmap() {
     );
     return flat;
   });
-
   const toggle = (id) => {
-    setSkills(prev => ({ ...prev, [id]: !prev[id] }));
+    setSkills(prev => {
+      const updated = { ...prev, [id]: !prev[id] };
+      localStorage.setItem('roadmap-skills', JSON.stringify(updated));
+      return updated;
+    });
   };
 
   const totalSkills = Object.keys(skills).length;
