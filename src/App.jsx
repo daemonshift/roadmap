@@ -80,6 +80,9 @@ const skillsData = [
           { id: "j15", label: "Promises & async/await", done: true },
           { id: "j16", label: "Fetch API (appels HTTP, JSON)", done: true },
           { id: "j17", label: "Gestion des erreurs (try/catch)", done: true },
+          { id: "j19", label: "Tests unitaires avec Vitest (describe, it, expect)", done: true },
+          { id: "j20", label: "Fonctions pures et logique testable", done: true },
+          { id: "j21", label: "gitignore et bonnes pratiques de projet", done: true },
         ]
       }
     ]
