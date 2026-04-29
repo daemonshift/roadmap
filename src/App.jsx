@@ -77,6 +77,9 @@ const skillsData = [
           { id: "j16", label: "Fetch API (appels HTTP, JSON)", done: false },
           { id: "j17", label: "Gestion des erreurs (try/catch)", done: false },
           { id: "j18", label: "Modules ES6 (import/export)", done: false },
+          { id: "j15", label: "Promises & async/await", done: true },
+          { id: "j16", label: "Fetch API (appels HTTP, JSON)", done: true },
+          { id: "j17", label: "Gestion des erreurs (try/catch)", done: true },
         ]
       }
     ]
