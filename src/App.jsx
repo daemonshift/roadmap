@@ -352,7 +352,7 @@ export default function SkillsRoadmap() {
       })}
 
       <div style={{ textAlign: "center", color: "#bbb", fontSize: "0.78rem", marginTop: "2rem" }}>
-        Mis à jour au fil de nos sessions — Bonne route 🌍
+        Discipline beats talent. This roadmap is my proof 🌍
       </div>
     </div>
   );
